@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link href="http://cdn.bootcss.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+<link href="gdropdown.css"
+	rel="stylesheet" type="text/css">
+<link href="demo.css" rel="stylesheet" type="text/css">
+<link href="zTree_v3.5.17/css/zTreeStyle/zTreeStyle.css"
+	rel="stylesheet" type="text/css">
+<title>gdropdown使用</title>
+</head>
+<body>
+
+	<div class="demo">
+
+		<h3 class="demo-title">gdropdown使用</h3>
+		<p>插件介绍：gdropdown简单的下拉菜单，可以添加shadow，增加阴影效果，其下拉的内容可以自己定义，配置width和height可以定义宽高，看看具体用法</p>
+		<div class="gtitlebar left">
+			<span class="title">1.装载列表</span>
+		</div>
+		<input type="text" id="demo1" readonly="readonly">
+		<div class="gtitlebar left">
+			<span class="title">2.装载树</span>
+		</div>
+		<input type="text" id="demo3" readonly="readonly" style="width: 190px">
+		<div class="gtitlebar left">
+			<span class="title">3.装载checkbox</span>
+		</div>
+		<input type="text" id="demo2" readonly="readonly"/>
+		
+		<div class="gtitlebar left">
+			<span class="title">4.弹出消息</span>
+		</div>
+		<span id="demo4" style="cursor: pointer;background-color: #8E44AD;padding : 4px 6px;color : #fff">
+		我的消息 <span style = "background-color: #5CB85C;border-radius: 10px;font-size: 12px;padding: 0 5px;">5</span>
+		</span>
+		<div class="gtitlebar left">
+			<span class="title">5.右键菜单</span>
+		</div>
+		<ul id="demo-5" class="ztree"></ul>
+		<div id="for-demo1" class="gdropdown shadow">
+			<ul class = "list">
+				<li><i class="fa fa-leaf"></i>列表一</li>
+				<li><i class="fa fa-leaf"></i>列表二</li>
+				<li><i class="fa fa-leaf"></i>列表三</li>
+				<li><i class="fa fa-leaf"></i>列表四</li>
+				<li><i class="fa fa-leaf"></i>列表五</li>
+				<li class="devider"></li>
+				<li><i class="fa fa-leaf"></i>列表六</li>
+			</ul>
+		</div>
+        <div class="gtitlebar left">
+			<span class="title">6.事件触发</span>
+		</div>
+		<button type = "button" id= "triev-demo-6">点我点我</button>
+		<input type = "text" id = "target-demo-6">
+		
+		<div id="for-demo2" class="gdropdown">
+			<p>
+				<span style="margin: 0px 15px"><input type="checkbox">足球</span>
+				<span><input type="checkbox">篮球</span>
+			</p>
+			<p>
+				<span style="margin: 0px 15px"><input type="checkbox">排球</span>
+				<span><input type="checkbox">网球</span>
+			</p>
+		</div>
+
+		<div id="for-demo3" class="gdropdown">
+			<ul id="treeDemo" class="ztree"></ul>
+		 </div> 
+		 
+		 <div id="for-demo4" class="gdropdown shadow">
+			<div class="header">
+				<span class="title"> <span class="icon"><i
+						class="fa fa-envelope-o"></i></span> <span class="text">我的消息</span>
+				</span> <span class="tool"> <span class="gflex"><i
+						class="fa fa-search" title="更多"></i></span>
+				</span>
+			</div>
+			<div class="body">
+			  <ul class = "list">
+			      <li>
+			         <span class = "thumbail">
+			            <i class="fa fa-leaf bg-info" ></i>
+			         </span>
+			         <span class="content">
+			             <span>越界：张三在惠来已经越界了</span>
+			             <span class = "clock"><i class = "fa fa-clock-o"></i>2015-05-15 12:01:51</span>
+			         </span>
+			      </li>
+			      <li class = "devider"></li>
+			      <li>
+			         <span class = "thumbail">
+			            <i class="fa fa-leaf bg-success" ></i>
+			         </span>
+			         <span class="content">
+			             <span>越界：张三在惠来已经越界了</span>
+			             <span class = "clock"><i class = "fa fa-clock-o"></i>2015-05-15 12:01:51</span>
+			         </span>
+			      </li>
+			      <li class = "devider"></li>
+			      <li>
+			         <span class = "thumbail">
+			            <i class="fa fa-leaf bg-danger" ></i>
+			         </span>
+			         <span class="content">
+			             <span>越界：张三在惠来已经越界了</span>
+			             <span class = "clock"><i class = "fa fa-clock-o"></i>2015-05-15 12:01:51</span>
+			         </span>
+			      </li>
+			      <li class = "devider"></li>
+			      <li>
+			         <span class = "thumbail">
+			            <i class="fa fa-leaf bg-wounded"></i>
+			         </span>
+			         <span class="content">
+			             <span>越界：张三在惠来已经越界了</span>
+			             <span class = "clock"><i class = "fa fa-clock-o"></i>2015-05-15 12:01:51</span>
+			         </span>
+			      </li>
+			      <li class = "devider"></li>
+			      <li>
+			         <span class = "thumbail">
+			            <i class="fa fa-leaf bg-warning"></i>
+			         </span>
+			         <span class="content">
+			             <span>越界：张三在惠来已经越界了</span>
+			             <span class = "clock"><i class = "fa fa-clock-o"></i>2015-05-15 12:01:51</span>
+			         </span>
+			      </li>
+			  </ul>
+			</div>
+		</div>
+	</div>
+	<div id="for-demo5" class="gdropdown shadow">
+			<ul class = "list">
+				<li><i class="fa fa-search"></i>查找节点</li>
+				<li><i class="fa fa-plus-circle "></i>添加节点</li>
+				<li><i class="fa fa-pencil "></i>修改节点</li>
+				<li><i class="fa fa-trash-o "></i>删除节点</li>
+				<li class="devider"></li>
+				<li><i class="fa fa-power-off "></i>退出列表</li>
+			</ul>
+	</div>
+	<div id ="content-demo-6" class="gdropdown shadow" style = "text-align: center;line-height: 120px">任意填充内容</div>
+
+</body>
+<script src="http://cdn.bootcss.com/jquery/3.0.0-beta1/jquery.js"></script>
+<script type="text/javascript"
+	src="gdropdown.js"></script>
+<script type="text/javascript"
+	src="zTree_v3.5.17/js/jquery.ztree.core-3.5.min.js"></script>
+<script type="text/javascript">
+   
+   /**
+    * 需要配置选项 
+    * 1.content 必填 需要显示的下拉框内容块,可以为jq选择器获取原生js dom对象
+    * 2.target  必填 需要吸附到的元素位置 ,可以为jq选择器获取原生js dom对象
+    * 3.triev   必填 触发显示下拉框的事件源，用于隐藏下来内容块，过滤事件
+    * 4.width   可选 下拉内容块的显示宽度，默认是150px
+    * 5.height  可选 下拉内容块的显示高度，默认是120px
+    */
+    /*装列表 */
+   $("#demo1").on("click",function(event){
+	   $.gdropdown({ content : "#for-demo1" ,target : "#demo1",triev : event});  //content为吸附的内容块，target为原生的dom对象，主要是用于获取下拉表的吸附位置
+	   $("#for-demo1 .list li").on("click",function(event){                                   //给列表的行绑定事件，赋值之后，调用dropdown实例的返回值的hide()方法收起   
+			$("#demo1").val($(this).text());
+			$.gdropdown("hide","#for-demo1");      //hide为方法，#for-demo1为想收起的下拉框的jq选择器
+	   });
+   });
+   
+   /*装树*/
+   $("#demo3").on("click",function(event){
+	   $.gdropdown({content : "#for-demo3",target : "#demo3",triev : event,width : "190px" });
+	   var zNodes = [ {
+			id : 1,
+			pId : 0,
+			name : "父节点1 - 展开",
+			open : true
+		}, {
+			id : 11,
+			pId : 1,
+			name : "父节点11 - 折叠"
+		}, {
+			id : 111,
+			pId : 11,
+			name : "叶子节点111"
+		}, {
+			id : 112,
+			pId : 11,
+			name : "叶子节点112"
+		}, {
+			id : 113,
+			pId : 11,
+			name : "叶子节点113"
+		}, {
+			id : 114,
+			pId : 11,
+			name : "叶子节点114"
+		}, {
+			id : 12,
+			pId : 1,
+			name : "父节点12 - 折叠"
+		}, {
+			id : 121,
+			pId : 12,
+			name : "叶子节点121"
+		}, {
+			id : 122,
+			pId : 12,
+			name : "叶子节点122"
+		}, {
+			id : 123,
+			pId : 12,
+			name : "叶子节点123"
+		}, {
+			id : 124,
+			pId : 12,
+			name : "叶子节点124"
+		}, {
+			id : 13,
+			pId : 1,
+			name : "父节点13 - 没有子节点",
+			isParent : true
+		}, {
+			id : 2,
+			pId : 0,
+			name : "父节点2 - 折叠"
+		}, {
+			id : 21,
+			pId : 2,
+			name : "父节点21 - 展开",
+			open : true
+		}, {
+			id : 211,
+			pId : 21,
+			name : "叶子节点211"
+		}, {
+			id : 212,
+			pId : 21,
+			name : "叶子节点212"
+		}, {
+			id : 213,
+			pId : 21,
+			name : "叶子节点213"
+		}, {
+			id : 214,
+			pId : 21,
+			name : "叶子节点214"
+		}, {
+			id : 22,
+			pId : 2,
+			name : "父节点22 - 折叠"
+		}, {
+			id : 221,
+			pId : 22,
+			name : "叶子节点221"
+		}, {
+			id : 222,
+			pId : 22,
+			name : "叶子节点222"
+		}, {
+			id : 223,
+			pId : 22,
+			name : "叶子节点223"
+		}, {
+			id : 224,
+			pId : 22,
+			name : "叶子节点224"
+		}, {
+			id : 23,
+			pId : 2,
+			name : "父节点23 - 折叠"
+		}, {
+			id : 231,
+			pId : 23,
+			name : "叶子节点231"
+		}, {
+			id : 232,
+			pId : 23,
+			name : "叶子节点232"
+		}, {
+			id : 233,
+			pId : 23,
+			name : "叶子节点233"
+		}, {
+			id : 234,
+			pId : 23,
+			name : "叶子节点234"
+		}, {
+			id : 3,
+			pId : 0,
+			name : "父节点3 - 没有子节点",
+			isParent : true
+		} ];
+		var setting = {
+				callback : {
+					onClick: function (ev ,treeId,treeNode) { //ztree的点击事件
+					    $("#demo3").val(treeNode.name); //将值赋给input，然后收起dropdown框
+					    $.gdropdown("hide","#for-demo3"); 
+					}
+				},
+				data : {
+					simpleData : {
+						enable : true
+					}
+				}
+			};
+		$.fn.zTree.init($("#treeDemo"), setting, zNodes);
+   })
+    
+   /* 装消息 */
+   $("#demo4").on("click",function(ev){
+	   $.gdropdown({content : "#for-demo4",target : "#demo4" , triev : ev});
+   });
+   
+   /* 装checkbox */
+   $("#demo2").on("click",function(ev){
+	   $.gdropdown({content : "#for-demo2",target : "#demo2",triev : ev,width : "150px",height : "100px" });
+   });
+   
+    $("input:checkbox").on("click",function(){
+		if($(this).is(":checked")){
+			var value = $("#demo2").val().concat($(this).parent().text() + ",");
+			$("#demo2").val(value);
+		}else{
+			var getValue = $(this).parent().text() + ",";
+			var value = $("#demo2").val();
+			$("#demo2").val(value.replace(getValue,""));
+		}
+	});
+    
+    /* 右键菜单 */
+    ztree5();
+    function ztree5(){
+    	var zNodes = [ {
+			id : 1,
+			pId : 0,
+			name : "父节点1 - 展开",
+			open : true
+		}, {
+			id : 11,
+			pId : 1,
+			name : "父节点11 - 折叠"
+		}, {
+			id : 111,
+			pId : 11,
+			name : "叶子节点111"
+		}, {
+			id : 112,
+			pId : 11,
+			name : "叶子节点112"
+		}, {
+			id : 113,
+			pId : 11,
+			name : "叶子节点113"
+		}, {
+			id : 114,
+			pId : 11,
+			name : "叶子节点114"
+		}, {
+			id : 12,
+			pId : 1,
+			name : "父节点12 - 折叠"
+		}, {
+			id : 121,
+			pId : 12,
+			name : "叶子节点121"
+		}, {
+			id : 122,
+			pId : 12,
+			name : "叶子节点122"
+		}, {
+			id : 123,
+			pId : 12,
+			name : "叶子节点123"
+		}, {
+			id : 124,
+			pId : 12,
+			name : "叶子节点124"
+		}, {
+			id : 13,
+			pId : 1,
+			name : "父节点13 - 没有子节点",
+			isParent : true
+		}, {
+			id : 2,
+			pId : 0,
+			name : "父节点2 - 折叠"
+		}, {
+			id : 21,
+			pId : 2,
+			name : "父节点21 - 展开",
+			open : true
+		}, {
+			id : 211,
+			pId : 21,
+			name : "叶子节点211"
+		}, {
+			id : 212,
+			pId : 21,
+			name : "叶子节点212"
+		}, {
+			id : 213,
+			pId : 21,
+			name : "叶子节点213"
+		}, {
+			id : 214,
+			pId : 21,
+			name : "叶子节点214"
+		}, {
+			id : 22,
+			pId : 2,
+			name : "父节点22 - 折叠"
+		}, {
+			id : 221,
+			pId : 22,
+			name : "叶子节点221"
+		}, {
+			id : 222,
+			pId : 22,
+			name : "叶子节点222"
+		}, {
+			id : 223,
+			pId : 22,
+			name : "叶子节点223"
+		}, {
+			id : 224,
+			pId : 22,
+			name : "叶子节点224"
+		}, {
+			id : 23,
+			pId : 2,
+			name : "父节点23 - 折叠"
+		}, {
+			id : 231,
+			pId : 23,
+			name : "叶子节点231"
+		}, {
+			id : 232,
+			pId : 23,
+			name : "叶子节点232"
+		}, {
+			id : 233,
+			pId : 23,
+			name : "叶子节点233"
+		}, {
+			id : 234,
+			pId : 23,
+			name : "叶子节点234"
+		}, {
+			id : 3,
+			pId : 0,
+			name : "父节点3 - 没有子节点",
+			isParent : true
+		} ];
+ 		var setting = {
+ 				callback : {
+ 					onRightClick: function (ev ,treeId,treeNode) { //ztree的点击事件
+ 						 $.gdropdown({content : "#for-demo5",target : ev.target,triev:ev,width : "90px"});
+ 					}
+ 				},
+ 				data : {
+ 					simpleData : {
+ 						enable : true
+ 					}
+ 				}
+ 			};
+ 		$.fn.zTree.init($("#demo-5"), setting, zNodes);
+    }
+    
+    /* 事件触发 */
+    $("#triev-demo-6").on("click",function(ev){
+    	$.gdropdown({content : "#content-demo-6",target : "#target-demo-6",triev:ev});
+    });
+	
+</script>
+</html>
